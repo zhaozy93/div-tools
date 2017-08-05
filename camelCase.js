@@ -1,0 +1,1 @@
+'use strict';Object.defineProperty(exports,'__esModule',{value:!0});function camelCase(a,b,c){return'boolean'==typeof b?c=c||'-':b=!0,b?a.replace(/(-|_)([a-z]|[0-9])/ig,function(d,e,f){return(f+'').toUpperCase()}):a.replace(/([A-Z])/g,function(d,e){return(''+c+e).toLowerCase()})}exports.default=camelCase;

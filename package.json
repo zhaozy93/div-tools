@@ -1,6 +1,6 @@
 {
   "name": "div-tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "collection of tools or function often used by fe",
   "main": "index.js",
   "scripts": {

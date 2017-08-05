@@ -1,13 +1,1 @@
-// add the alert modal function before the page will be closed
-// also you get one object that can remove this function
-function notifyBeforeClose(){
-  window.onbeforeunload = function(){
-    return '确认要离开吗？'
-  };
-  return {
-    removeNotifyBeforeClose: function(){
-      window.onbeforeunload = function(){}
-    }
-  }
-}
-export default notifyBeforeClose;
+'use strict';Object.defineProperty(exports,'__esModule',{value:!0});function notifyBeforeClose(){return window.onbeforeunload=function(){return'\u786E\u8BA4\u8981\u79BB\u5F00\u5417\uFF1F'},{removeNotifyBeforeClose:function removeNotifyBeforeClose(){window.onbeforeunload=function(){}}}}exports.default=notifyBeforeClose;

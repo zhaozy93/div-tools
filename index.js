@@ -1,15 +1,1 @@
-import cookies from './cookies';
-import localStorage from './storage';
-import deepClone from './deepClone.js';
-import removeUndefined from './removeUndefined.js';
-import addEventListener from './addEventListener.js';
-import notifyBeforClose from './notifyBeforClose.js';
-
-export default {
-  cookies: cookies,
-  localStorage: localStorage,
-  deepClone: deepClone,
-  removeUndefined: removeUndefined,
-  notifyBeforClose: notifyBeforClose,
-  addEventListener: addEventListener
-};
+'use strict';Object.defineProperty(exports,'__esModule',{value:!0}),exports.removeUndefined=exports.notifyBeforClose=exports.localStorage=exports.deepClone=exports.cookies=exports.camelCase=exports.addEventListener=void 0;var _cookies=require('./cookies'),_cookies2=_interopRequireDefault(_cookies),_localStorage=require('./localStorage'),_localStorage2=_interopRequireDefault(_localStorage),_deepClone=require('./deepClone.js'),_deepClone2=_interopRequireDefault(_deepClone),_removeUndefined=require('./removeUndefined.js'),_removeUndefined2=_interopRequireDefault(_removeUndefined),_addEventListener=require('./addEventListener.js'),_addEventListener2=_interopRequireDefault(_addEventListener),_notifyBeforClose=require('./notifyBeforClose.js'),_notifyBeforClose2=_interopRequireDefault(_notifyBeforClose),_camelCase=require('./camelCase.js'),_camelCase2=_interopRequireDefault(_camelCase);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}exports.addEventListener=_addEventListener2.default,exports.camelCase=_camelCase2.default,exports.cookies=_cookies2.default,exports.deepClone=_deepClone2.default,exports.localStorage=_localStorage2.default,exports.notifyBeforClose=_notifyBeforClose2.default,exports.removeUndefined=_removeUndefined2.default,exports.default={addEventListener:_addEventListener2.default,camelCase:_camelCase2.default,cookies:_cookies2.default,deepClone:_deepClone2.default,localStorage:_localStorage2.default,notifyBeforClose:_notifyBeforClose2.default,removeUndefined:_removeUndefined2.default};

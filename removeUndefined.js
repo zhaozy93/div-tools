@@ -1,18 +1,1 @@
-// use for remove all undefined value in an object or array
-function removeUndefined(origin){
-  for(var i in origin){
-    if (Object.prototype.toString.call(origin) === '[object Array]' || origin.hasOwnProperty(i)){
-      if( Object.prototype.toString.call(origin[i]) === '[object Array]' || Object.prototype.toString.call(origin[i]) === '[object Object]') {
-        removeUndefined(origin[i]);
-      } else if(origin[i] === undefined){
-        if(Object.prototype.toString.call(origin) === '[object Array]'){
-          origin.splice(i--, 1 );
-        } else {
-          delete origin[i]
-        }
-      }
-    }
-  }
-}
-
-export default removeUndefined;
+'use strict';Object.defineProperty(exports,'__esModule',{value:!0});function removeUndefined(a){for(var b in a)('[object Array]'===Object.prototype.toString.call(a)||a.hasOwnProperty(b))&&('[object Array]'===Object.prototype.toString.call(a[b])||'[object Object]'===Object.prototype.toString.call(a[b])?removeUndefined(a[b]):void 0===a[b]&&('[object Array]'===Object.prototype.toString.call(a)?a.splice(b--,1):delete a[b]))}exports.default=removeUndefined;
